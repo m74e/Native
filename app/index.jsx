@@ -20,7 +20,7 @@ const app = () => {
         >
           {" "}
           <Pressable style={styles.Button}>
-            <Text style={styles.Buttontext}>Contact</Text>{" "}
+            <Text style={styles.Buttontext}>Contact</Text>
           </Pressable>
         </Link>
       </ImageBackground>
