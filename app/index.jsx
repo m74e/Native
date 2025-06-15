@@ -12,13 +12,14 @@ import { Link } from "expo-router";
 const app = () => {
   return (
     <View style={styles.container}>
-      <ImageBackground source={icedCoffeeImage}>
-        <Text style={styles.text}>coffee shop</Text>
+      <ImageBackground  source={icedCoffeeImage}>
+        <Text  style={styles.text}>coffee shop</Text>
         <Link
           // style={[styles.link, { marginHorizontal: "auto" }]}
-          href={"/contact"}        
+          href={"/contact"}  
+          style={styles.link}      
         >
-          {" "}
+          
           <Pressable style={styles.Button}>
             <Text style={styles.Buttontext}>Contact</Text>
           </Pressable>
@@ -34,6 +35,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     flexDirection: "column",
+    
   },
   image: {
     width: "100%",
@@ -56,7 +58,7 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     textDecorationLine: "underline",
     textAlign: "center",
-    backgroundColor: "rgba(0, 0, 0, 0.5)",
+    // backgroundColor: "rgba(0, 0, 0, 0.5)",
     padding: 4,
   },
   Button: {
