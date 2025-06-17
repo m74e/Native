@@ -12,7 +12,7 @@ import { Link } from "expo-router";
 const app = () => {
   return (
     <View style={styles.container}>
-      <ImageBackground  source={icedCoffeeImage}>
+      <ImageBackground style={styles.image}      source={icedCoffeeImage}>
         <Text  style={styles.text}>coffee shop</Text>
         <Link
           // style={[styles.link, { marginHorizontal: "auto" }]}
@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
   },
   image: {
     width: "100%",
-    height: "500px",
+    // height: "500px",
     flex: 1,
     resizeMode: "cover",
     justifyContent: "center",
